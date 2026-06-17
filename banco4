@@ -54,3 +54,11 @@ FROM OrderDetails
 WHERE ProductID >3
 ORDER BY OrderID;
 
+at_10
+SELECT TOP 10  OrderID AS Pedido        
+FROM OrderDetails
+WHERE OrderID >3
+ORDER BY Quantity;
+
+
+
