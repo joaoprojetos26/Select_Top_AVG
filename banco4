@@ -49,3 +49,8 @@ WHERE Quantity >0
 ORDER BY Quantity DESC , ProductID;
 
 at_9
+SELECT TOP 5 ProductID AS Produto          
+FROM OrderDetails
+WHERE ProductID >3
+ORDER BY OrderID;
+
