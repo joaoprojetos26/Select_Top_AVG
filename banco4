@@ -1,0 +1,51 @@
+at_1
+SELECT *
+FROM clientes
+LIMIT 5;
+
+at_2
+SELECT TOP 3 Quantity,OrderID
+
+FROM OrderDetails
+WHERE Quantity > 10
+ORDER BY OrderID;
+
+at_3
+SELECT TOP 7 Quantity
+FROM OrderDetails
+WHERE Quantity > 0
+ORDER BY Quantity DESC;
+
+at_4
+SELECT TOP 10 ProductID
+FROM OrderDetails
+WHERE ProductID=4
+ORDER BY ProductID ASC;
+
+at_5
+SELECT TOP 2 OrderDetailID,OrderID
+FROM OrderDetails
+WHERE OrderID >0
+ORDER BY OrderDetailID ASC;
+
+at_6
+SELECT TOP 15 *
+FROM OrderDetails
+ORDER BY Quantity DESC;
+
+at_7
+SELECT TOP 20 ProductID AS Produto,
+              Quantity AS Quantidade
+        
+FROM OrderDetails
+WHERE Quantity >0
+ORDER BY Quantity asc , ProductID;
+
+at_8
+SELECT TOP 8
+              Quantity AS Quantidade
+FROM OrderDetails
+WHERE Quantity >0
+ORDER BY Quantity DESC , ProductID;
+
+at_9
