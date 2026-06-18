@@ -60,5 +60,99 @@ FROM OrderDetails
 WHERE OrderID >3
 ORDER BY Quantity;
 
+at_11
+SELECT TOP 12  OrderDetailID AS 'Detalhes do pedido',
+               Quantity AS Quantidade
+FROM OrderDetails
+WHERE Quantity<15
+ORDER BY OrderDetailID;
+
+at_12
+SELECT  Quantity AS Quantidade,
+		Cod_Product AS Produto
+
+FROM OrderDetails
+WHERE Cod_Product%2=0
+ORDER BY Quantity
+LIMIT 6;
+
+at_13
+SELECT  Cod_Product AS Produto
+
+FROM OrderDetails
+WHERE Cod_Product
+ORDER BY Cod_Product DESC
+LIMIT 5;
+
+at_14
+SELECT *
+
+FROM OrderDetails
+WHERE Cod_Product >0
+ORDER BY Cod_Order, Quantity ASC
+LIMIT 7;
+
+at_15
+SELECT Cod_Order AS Pedido,
+       Cod_Product AS Produto,
+       Quantity AS Quantidade
+
+FROM OrderDetails
+WHERE Quantity <8
+ORDER BY Cod_Order, Cod_Product ASC
+LIMIT 3;
+
+at_16
+SELECT Cod_Order AS Pedido,
+       Quantity AS Quantidade
+
+FROM OrderDetails
+WHERE Quantity >0
+ORDER BY Cod_Order ASC
+LIMIT 9;
+
+at_17
+SELECT Cod_Order AS Pedido
+      
+FROM OrderDetails
+WHERE Cod_Order= 20
+ORDER BY Cod_Order ASC
+LIMIT 2;
+
+at_18
+SELECT  Cod_Product AS Produto,
+        Quantity AS Quantidade
+      
+FROM OrderDetails
+WHERE Quantity>25
+ORDER BY Cod_Product ASC
+LIMIT 10;
+
+at_19
+SELECT  Quantity AS Quantidade,
+		Cod_OrderDetail AS 'Detalhes do pedido'
+        
+FROM OrderDetails
+WHERE Cod_OrderDetail<50
+ORDER BY Cod_Product ASC
+LIMIT 4;
+
+at_20
+SELECT  Cod_Product AS Produto,
+		Cod_Order AS Pedido
+        
+FROM OrderDetails
+WHERE Cod_Order BETWEEN 10 AND 30
+ORDER BY Cod_Product ASC
+LIMIT 6;
+
+at_21
+SELECT Quantity
+FROM OrderDetails
+ORDER BY Cod_OrderDetail ASC
+LIMIT 8;
+
+at_22
+
 
 
