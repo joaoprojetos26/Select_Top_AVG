@@ -153,6 +153,44 @@ ORDER BY Cod_OrderDetail ASC
 LIMIT 8;
 
 at_22
+SELECT  ProductID AS IDProdutos
+FROM OrderDetails 
+WHERE ProductID  LIKE '%7'
+ORDER  BY OrderID
+LIMIT 5 ;
 
+at_23
+SELECT OrderID AS IDCompra
+FROM OrderDetails 
+WHERE OrderID >100
+ORDER  BY Quantity ASC
+LIMIT 3 ;
 
+at_24
+SELECT Quantity AS Quantidades
+FROM OrderDetails 
+WHERE Quantity > 15
+ORDER  BY OrderDetailID;
+
+at_25
+SELECT Quantity AS Quantidades
+FROM OrderDetails 
+WHERE Quantity > 15
+ORDER  BY OrderDetailID;
+
+at_26
+SELECT ProductID
+FROM OrderDetails 
+WHERE ProductID %3 = 0
+ORDER  BY OrderDetailID
+LIMIT 7;
+
+AT_27
+SELECT OrderDetailID
+FROM OrderDetails 
+WHERE OrderDetailID BETWEEN 5 AND 50
+ORDER  BY OrderID
+LIMIT 10;
+
+at_28
 
