@@ -193,4 +193,10 @@ ORDER  BY OrderID
 LIMIT 10;
 
 at_28
+SELECT Quantity AS Quantidade
+FROM OrderDetails 
+WHERE Quantity 
+ORDER  BY Quantity DESC,ProductID
+LIMIT 6;
+        
 
