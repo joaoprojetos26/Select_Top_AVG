@@ -1,3 +1,5 @@
+ SELECT TOP FROM WHERE ORDER BY
+
 at_1
 SELECT *
 FROM clientes
@@ -289,6 +291,69 @@ ORDER BY Quantity DESC
 LIMIT 3;
 
 at_42
+ SELECT Quantity AS Quantidade
+FROM OrderDetails
+WHERE Quantity >30
+ORDER BY ProductID ,Quantity ASC
+LIMIT 9;  
 
-        
+At_43
+SELECT OrderDetailID AS IDDetalhedevenda
+FROM OrderDetails
+WHERE OrderDetailID < 200
+ORDER BY OrderID ASC
+LIMIT 7;
+
+AT_44
+SELECT OrderID AS IDvendas
+FROM OrderDetails
+WHERE OrderID BETWEEN 100 AND 200
+ORDER BY ProductID ASC
+LIMIT 5;
+
+AT_45
+SELECT Quantity AS Quantidade
+FROM OrderDetails
+ORDER BY Quantity DESC, OrderDetailID
+LIMIT 12;
+
+AT_46
+SELECT ProductID AS IDProdutos
+FROM OrderDetails
+WHERE ProductID < 10
+ORDER BY OrderID ASC
+LIMIT 9;
+
+AT_47
+SELECT OrderID AS IDvendas
+FROM OrderDetails
+WHERE OrderID like '%0'
+ORDER BY Quantity ASC
+LIMIT 2;
+
+at_48
+SELECT OrderID AS IDvendas
+FROM OrderDetails
+WHERE OrderID 
+ORDER BY OrderID DESC,ProductID 
+LIMIT 5;
+
+at_49
+SELECT Quantity AS Quantity
+FROM OrderDetails
+WHERE Quantity % 4 = 0
+ORDER BY ProductID ASC
+LIMIT 6;
+
+AT_50
+SELECT  ProductID 
+FROM OrderDetails
+WHERE ProductID 
+ORDER BY Quantity,ProductID desc 
+LIMIT 10;
+
+ SELECT AVG FROM WHERE ORDER BY
+
+
+
 
