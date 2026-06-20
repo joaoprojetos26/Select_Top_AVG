@@ -354,6 +354,140 @@ LIMIT 10;
 
  SELECT AVG FROM WHERE ORDER BY
 
+at_1
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails;
+
+at_2
+SELECT AVG(Quantity) AS QUANTIDADE
+FROM OrderDetails
+WHERE OrderID > 10;
+
+at_3
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID = 5;
+
+at_4
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID < 50;
+
+at_5
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID > 100;
+
+at_6
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID % 2 = 0
+
+at_7
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID % 2 = 1;
+
+AT_8
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15;
+
+AT_9
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID LIKE '%0';
+
+at_10
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 10 AND 30;
+
+at_11
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity > 25;
+
+at_12
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity < 10;
+
+at_13
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID > 7;
+
+at_14
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID < 20;
+
+AT_15
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity % 5 = 0;
+
+at_16
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID < 12;
+
+at_17
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID BETWEEN 15 AND 30;
+
+at_18
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID LIKE '2%'
+
+at_19
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID > 10;
+
+at_20
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID % 2 = 1;
+
+at_21
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID % 3 = 0;
+
+at_22
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID > 30;
+
+at_23
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity BETWEEN 10 AND 20;
+
+at_24
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID LIKE '%5';
+
+at_25
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID IN (3, 5, 7);
+
+at_26
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity NOT BETWEEN 15 AND 25;
+
+at_27
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 5 AND 15
+
 
 
 
