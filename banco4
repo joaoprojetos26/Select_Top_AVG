@@ -198,5 +198,97 @@ FROM OrderDetails
 WHERE Quantity 
 ORDER  BY Quantity DESC,ProductID
 LIMIT 6;
+
+at_29
+SELECT ProductID AS IDProdutos
+FROM OrderDetails
+WHERE ProductID %2=1
+ORDER BY Quantity
+LIMIT 4;
+
+AT_30
+SELECT OrderID AS IDvenda
+FROM OrderDetails
+WHERE OrderID >15
+ORDER BY ProductID
+LIMIT 8;
+
+AT_31
+SELECT Quantity AS Quantidade
+FROM OrderDetails
+WHERE Quantity < 5
+ORDER BY OrderID
+LIMIT 3;
+
+at_32
+SELECT ProductID AS IDProduto
+FROM OrderDetails
+WHERE ProductID %2=0
+ORDER BY OrderID
+LIMIT 5;
+
+at_33
+SELECT OrderDetailID AS 'ID da venda'
+FROM OrderDetails
+ORDER BY OrderDetailID DESC
+LIMIT 10;
+
+AT_34
+SELECT Quantity AS Quantidade
+FROM OrderDetails
+where Quantity %5=0
+ORDER BY ProductID 
+LIMIT 7;
+
+at_35
+SELECT ProductID
+FROM OrderDetails
+where ProductID
+ORDER BY ProductID ASC
+LIMIT 2;
+
+at_36
+SELECT OrderID
+FROM OrderDetails
+WHERE OrderID LIKE '%1'
+ORDER BY Quantity ASC
+LIMIT 8;
+
+at_37
+SELECT OrderID AS IDvendas
+FROM OrderDetails
+ORDER BY OrderID DESC
+LIMIT 4
+
+at_38
+SELECT Quantity AS Quantidade
+FROM OrderDetails
+WHERE Quantity > 30
+ORDER BY ProductID ,Quantity ASC
+LIMIT 9
+
+at_39
+SELECT ProductID
+FROM OrderDetails
+WHERE ProductID
+ORDER BY OrderID,ProductID ASC 
+LIMIT 5;
+
+at_40
+SELECT OrderDetailID
+FROM OrderDetails
+WHERE OrderDetailID
+ORDER BY Quantity,OrderDetailID DESC 
+LIMIT 6;
+
+at_41
+SELECT OrderDetailID AS 'ID Detalhe De vendas'
+FROM OrderDetails
+WHERE OrderDetailID
+ORDER BY Quantity DESC 
+LIMIT 3;
+
+at_42
+
         
 
