@@ -488,6 +488,115 @@ SELECT AVG(Quantity) AS Quantidade
 FROM OrderDetails
 WHERE ProductID BETWEEN 5 AND 15
 
+AT_28
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID = 100;
+
+at_29
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 100 AND 200;
+
+at_30
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity > 20;
+
+at_31
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID NOT IN (1, 2, 3);
+
+at_32
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID LIKE '%2';
+
+at_34
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity % 2 = 0;
+
+at_35
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID = 10;
+
+at_36
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID BETWEEN 50 AND 100;
+
+at_37
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID LIKE '1%';
+
+at_38
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID % 5 = 0;
+
+at_39
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity NOT IN (5, 10, 15);
+
+at_40
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID < 10;
+
+at_41
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID > 20;
+
+at_42
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity LIKE 15;
+
+at_43
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID IN (10, 20, 30);
+
+at_44
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity BETWEEN 5 AND 10;
+
+at_45
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID % 10 <> 3;
+
+at_46
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID > 30;
+
+at_47
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderID < 100;
+
+at_48
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE ProductID BETWEEN 10 AND 50;
+
+at_49
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE Quantity % 4 = 0;
+
+at_50
+SELECT AVG(Quantity) AS Quantidade
+FROM OrderDetails
+WHERE OrderDetailID LIKE '%0';
 
 
 
